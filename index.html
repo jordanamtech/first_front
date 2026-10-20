@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Front</title>
+    <title>Use Praiana</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <style>
+
+
         /***********************************
          * Folhas de Estilo do Frist Front *
          ***********************************/
@@ -16,7 +18,7 @@
         /* 
         Ajusta as tags para se comportar da mesma forma,
         mesmo com diferenças entre navegadores.
-        +/
+        */
 
         /* Todas as caixas */
         * {
@@ -32,7 +34,7 @@
 
         /* Todos os links com ponteiro sobre */
         a:hover {
-            color: orangered;
+            color: rgb(156, 221, 247);
         }
 
         /* Elementoas raiz */
@@ -51,7 +53,7 @@
             Iso significa que 1rem = 16px, .5rem = 8px, 2rem = 32px
             */
         }
-
+        
         /* Remove margens fos titulos. */
         h1,
         h2,
@@ -67,10 +69,10 @@
 
         /* Seleciona o elemento "header" que é filho direto do emelento div#wrap */
         #wrap>header {
-            background-color: #ffa500;
-            padding: 1rem;
+        background-color: #F2DEBA;
+        padding: 1rem;
         }
-
+       
         /* Apenas imagem dentro do header. */
         #wrap>header img {
             display: block;
@@ -140,20 +142,38 @@
     <div id="wrap">
 
         <!-- Cabeçalho -->
-        <header>
-            <div>
-                <!-- Logotipo clicável para a página inicial -->
-                <a href="index.html"><img src="img/logotipo.png" alt="Logotipo do First Front"></a>
+        
+<!-- Cabeçalho -->
+<header>
+    <div>
+        <!-- Logotipo da Use Praiana -->
+        <a href="index.html">
+            <img src="img/logotipo.png" alt="Logotipo Use Praiana">
+        </a>
 
-                <h1>First<br>Front</h1>
-            </div>
+        
+        <h1>Use Praiana</h1>
 
-            <!-- Formulário de pesquisa no site -->
-            <form action="https://www.google.com/search" method="get" target="_blank">
-                <input type="search" name="q" required>
-                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-fw fa-flip-horizontal"></i></button>
-            </form>
-        </header>
+    </div>
+
+    <!-- Formulário de pesquisa -->
+    <form action="https://www.google.com/search"
+          method="get"
+          target="_blank">
+
+        <input
+            type="search"
+            name="q"
+            placeholder="Pesquisar..."
+            required
+        >
+
+        <button type="submit" aria-label="Pesquisar">
+            <i class="fa-solid fa-magnifying-glass fa-fw"></i>
+        </button>
+    </form>
+</header>
+
 
         <!-- Menu principal -->
          <nav>
@@ -238,6 +258,7 @@
         </footer>
 
     </div>
+
 
 </body>
 
