@@ -7,136 +7,9 @@
     <title>Use Praiana</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <style>
-
-
-        /***********************************
-         * Folhas de Estilo do Frist Front *
-         ***********************************/
-
-        /***** Reset Geral *****/
-        /* 
-        Ajusta as tags para se comportar da mesma forma,
-        mesmo com diferenças entre navegadores.
-        */
-
-        /* Todas as caixas */
-        * {
-            box-sizing: border-box;
-            outline: none;
-        }
-
-        /* Todos links */
-        a {
-            text-decoration: none;
-            color: steelblue;
-        }
-
-        /* Todos os links com ponteiro sobre */
-        a:hover {
-            color: rgb(156, 221, 247);
-        }
-
-        /* Elementoas raiz */
-        html,
-        body {
-            position: relative;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-
-            /* Define a fonte padrão e o tamanho */
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 16px;
-            /* 
-            O atributo acima define uma unidade "rem". 
-            Iso significa que 1rem = 16px, .5rem = 8px, 2rem = 32px
-            */
-        }
-        
-        /* Remove margens fos titulos. */
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: 0;
-            padding: .85rem 0;
-        }
-
-        /***** Cabeçalho *****/
-
-        /* Seleciona o elemento "header" que é filho direto do emelento div#wrap */
-        #wrap>header {
-        background-color: #F2DEBA;
-        padding: 1rem;
-        }
-       
-        /* Apenas imagem dentro do header. */
-        #wrap>header img {
-            display: block;
-            width: 5rem;
-            height: auto;
-            border-radius: .4rem;
-        }
-
-        /* Elemento div que contém logo e nome do site. */
-        #wrap>header>div {
-            display: flex;
-            align-items: center;
-        }
-
-        /* Formulário de pesquisa no header. */
-        #wrap>header form {
-            margin-top: 1rem;
-            display: flex;
-        }
-       /* O campo de pesquisa cresce o máximo possível. */
-        #wrap>header form input {
-            flex-grow: 1;   
-            border-radius: .4rem 0 0 .4rem;         
-        }
-
-        #wrap>header form button {
-            border-radius: 0 .4rem .4rem 0;
-        }
-
-        /*  Seleciona todos os filhos do form. */
-        #wrap>header form>* {
-
-       /*Hherda as configurações da fonte dos elementos raiz (HTML, BODY). */
-            font-size: inherit;
-            font-family: inherit;
-            
-            border: none;
-            padding: .5rem;
-            
-        }
-
-
-        /* Título (nome) do site. */
-        #wrap>header h1 {
-            color: #fff;
-            font-size: 2.5rem;
-            line-height: 1;
-            -webkit-text-stroke: .7px black;
-            padding: 0;
-            padding-left: .85rem;
-        }
-
-        /***** Classes de uso geral *****/
-
-        /* Imagens responsivas */
-        img.responsive {
-            max-width: 100%;
-            width: auto;
-        }
-    </style>
-</head>
+  </head>
 
 <body>
-
     <!-- div conteiner que limita a largura do 
     conteúdo e permite outros efeitos. -->
     <div id="wrap">
@@ -209,35 +82,7 @@
                     velit ratione tempora quae?</p>
                 <p>Links úteis:</p>
 
-                <!-- 
-                Lista de links externos que abrem em uma nova guia.
-                Use o atributo target="_blank" para abrir o link em outra guia
-                -->
-                <ul>
-                    <li><a href="https://google.com" target="_blank">Google</a></li>
-                    <li><a href="https://links.lufer.click" target="_blank">Traquitanas</a></li>
-                    <li><a href="https://www.rj.senac.br" target="_blank">Senac</a></li>
-                </ul>
-
-                <h3>Mais sobre alguma coisa</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime non odio dolorum in vero
-                    neque a magnam delectus, natus amet architecto repudiandae nisi consequatur eaque deserunt sequi
-                    repellendus debitis?</p>
-
-                <h4>Imagem externa</h4>
-                <img class="responsive" src="https://picsum.photos/400/300" alt="Imagem aleatória">
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis. Ipsum, doloremque, itaque
-                    inventore est ipsa neque nobis alias quaerat vitae saepe dolore aliquid soluta optio at quos
-                    suscipit aspernatur!</p>
-
-                <h4>Imagem interna</h4>
-                <!-- A imagem esta na pasta "img". Atenção a este detalhe. -->
-                <img class="responsive" src="img/vaca.png" alt="Vaquinha">
-
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio iusto autem laudantium non debitis
-                    voluptates alias. Facere, molestiae voluptatum! Nostrum ipsa natus praesentium eos hic mollitia
-                    similique? Maiores, suscipit distinctio!</p>
+                
 
             </section>
 
@@ -258,7 +103,6 @@
         </footer>
 
     </div>
-
 
 </body>
 
