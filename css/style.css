@@ -153,3 +153,381 @@ img.responsive {
     max-width: 100%;
     width: auto;
 }
+
+
+/* FAIXA DE PROMOÇÕES */
+
+.barra-promocao {
+    background-color: #292727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cupom {
+    border: 1px dashed white;
+    border-radius: 20px;
+    padding: 6px 18px;
+}
+
+
+/* NOVO LAYOUT DO CABEÇALHO */
+
+#wrap > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: white;
+    padding: 15px 25px;
+}
+
+/* Logotipo e nome */
+#wrap > header > div {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Tamanho do logotipo */
+#wrap > header img {
+    width: 60px;
+    height: auto;
+}
+
+/* Nome da loja */
+#wrap > header h1 {
+    font-size: 24px;
+    color: #222;
+    -webkit-text-stroke: 0;
+    white-space: nowrap;
+}
+
+/* Barra de pesquisa */
+#wrap > header form {
+    display: flex;
+    flex: 1;
+    margin-top: 0;
+    max-width: 600px;
+}
+
+/* Campo de pesquisa */
+#wrap > header form input {
+    min-width: 0;
+    background-color: #f5f5f8;
+    border-radius: 30px 0 0 30px;
+}
+
+/* Botão de pesquisa */
+#wrap > header form button {
+    background-color: #f5f5f8;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+
+/* Telas menores */
+@media (max-width: 650px) {
+    #wrap > header {
+        flex-wrap: wrap;
+    }
+
+    #wrap > header form {
+        flex-basis: 100%;
+        max-width: none;
+    }
+}
+
+
+/* CORREÇÃO DA ESTRUTURA DO SITE */
+
+#wrap {
+    display: block;
+    width: 100%;
+}
+
+#wrap > header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#wrap > nav {
+    width: 100%;
+}
+
+#wrap > main {
+    display: block;
+    width: 100%;
+}
+
+#wrap > footer {
+    width: 100%;
+}
+
+
+/* MENU DA LOJA */
+
+#wrap > nav.menu-loja {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: none;
+}
+
+#wrap > nav.menu-loja > a {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px;
+    display: inline-block;
+    background: transparent;
+}
+
+#wrap > nav.menu-loja > a:hover {
+    color: #d9653f;
+}
+
+#wrap > nav.menu-loja > a.ofertas {
+    color: red;
+}
+
+
+/* CATEGORIAS DENTRO DO CABEÇALHO */
+
+#wrap > header > nav.menu-loja {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#wrap > header > nav.menu-loja a {
+    color: black;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+#wrap > header > nav.menu-loja a.ofertas {
+    color: red;
+}
+
+/* AJUSTE PARA TELAS MENORES */
+
+@media (max-width: 1100px) {
+    #wrap > header {
+        flex-wrap: wrap;
+    }
+
+    #wrap > header > nav.menu-loja {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        order: 3;
+    }
+}
+
+
+/* MENU DENTRO DO CABEÇALHO */
+
+#wrap > header > nav.menu-loja {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#wrap > header > nav.menu-loja a {
+    color: black;
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+#wrap > header > nav.menu-loja a.ofertas {
+    color: red;
+}
+
+@media (max-width: 1100px) {
+    #wrap > header {
+        flex-wrap: wrap;
+    }
+
+    #wrap > header > nav.menu-loja {
+        order: 3;
+        width: 100%;
+    }
+}
+
+
+/* AJUSTE FINAL DOS ÍCONES */
+
+#wrap > header .icones-loja {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-shrink: 0;
+}
+
+#wrap > header .icones-loja a {
+    color: #222;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+#wrap > header .icones-loja a:hover {
+    color: #e56b45;
+}
+
+
+/* RODAPÉ USE PRAIANA */
+
+.rodape-loja {
+    background-color: #ffffff;
+    padding: 70px 20px 25px;
+    text-align: center;
+}
+
+/* Conteúdo central */
+.rodape-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Frase e logotipo */
+.rodape-marca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rodape-marca h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+    padding: 0;
+}
+
+/* Logotipo */
+.rodape-marca img {
+    width: 85px;
+    height: auto;
+}
+
+/* Redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.redes-sociais a {
+    color: #808080;
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #e56b45;
+}
+
+/* Direitos autorais */
+.copyright {
+    margin-top: 50px;
+    color: #888;
+    font-size: 12px;
+}
+
+/* Ajuste para celular */
+@media (max-width: 650px) {
+    .rodape-marca {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rodape-marca h2 {
+        font-size: 22px;
+    }
+
+    .rodape-marca img {
+        width: 70px;
+    }
+
+    .redes-sociais {
+        gap: 20px;
+    }
+}
+
+/* PAGAMENTO E SEGURANÇA DO RODAPÉ */
+
+.rodape-informacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1500px;
+    margin: 50px auto 0;
+    text-align: left;
+}
+
+.formas-pagamento,
+.seguranca-loja {
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}
+
+.rodape-informacoes h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pagamento-icones,
+.seguranca-icones {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.pagamento-icones span {
+    font-size: 16px;
+    color: #333;
+}
+
+.pagamento-icones i {
+    font-size: 30px;
+}
+
+.seguranca-icones span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.seguranca-icones i {
+    font-size: 24px;
+    color: #555;
+}
+
+/* CELULAR */
+@media (max-width: 650px) {
+    .rodape-informacoes {
+        grid-template-columns: 1fr;
+    }
+}
